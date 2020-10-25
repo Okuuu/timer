@@ -1,4 +1,4 @@
-const time = 5000
+const time = 1000 * 60 * 60 * 2;
 const audio = new Audio('./alarm.mp3');
 
 const clock = {
@@ -26,7 +26,7 @@ function startTimer() {
 
 const alarm = function() {
     document.title = 'Il est l\'heure';
-    // audio.play();
+    audio.play();
     console.log('driiiiiiiing');
     stopButton.removeAttribute('disabled');
     htmlContainer.style.backgroundColor = "tomato";
